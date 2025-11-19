@@ -14,26 +14,56 @@ class Data:
         except FileNotFoundError:
             raise FileNotFoundError(f"Could not find file at {filepath}")
 
-        # Extracting columns based on your requirements
+        # Extracting columns
         self.ids = df['no.'].tolist()
         self.coords = list(zip(df['latitude(N)'], df['longitude(E)']))
         self.demands = df['weight(tons)'].tolist()
         self.service_times = df['collection_time(h)'].tolist()
         
-        # Parsing Time Windows (Assuming format "Start-End", e.g., "8.0-12.0")
-        # Returns a list of tuples: [(start, end), ...]
+        # Parse time windows
         self.time_windows = []
         for tw in df['time_windows']:
             try:
-                # Adjust the delimiter '-' if your CSV uses something else like ':'
-                start, end = map(float, str(tw).split('-')) 
+                start, end = map(float, str(tw).split('-'))
                 self.time_windows.append((start, end))
             except ValueError:
-                # Fallback if format is invalid
-                self.time_windows.append((0.0, 24.0)) 
+                self.time_windows.append((0.0, float('inf')))
 
+        # ------------------------------------------
+        # ADD DEPOT NODE (hard-coded)
+        # ------------------------------------------
+        depot_id = 0
+        depot_coord = (50.0, 0.0)   # Example depot coordinate
+        depot_demand = 0
+        depot_service_time = 0
+        depot_time_window = (0.0, float('inf'))
+
+        # Insert depot at the beginning
+        self.ids.insert(0, depot_id)
+        self.coords.insert(0, depot_coord)
+        self.demands.insert(0, depot_demand)
+        self.service_times.insert(0, depot_service_time)
+        self.time_windows.insert(0, depot_time_window)
+
+        # Update number of nodes
         self.n = len(self.ids)
+
+        # Placeholder for distance matrix
         self.dist_matrix = []
+
+        # ------------------------------------------
+        # SHIP INFORMATION
+        # ------------------------------------------
+        self.ships = [
+            {"Type": "T1",  "Rent": 10000, "Capacity": 7},
+            {"Type": "T2", "Rent": 11000, "Capacity": 8},
+            {"Type": "T3",  "Rent": 12000, "Capacity": 9},
+            {"Type": "T4",  "Rent": 13000, "Capacity": 10},
+            {"Type": "T5", "Rent": 14000, "Capacity": 11},
+            {"Type": "T6",  "Rent": 15000, "Capacity": 12},
+            {"Type": "T7",  "Rent": 16000, "Capacity": 13},
+            {"Type": "T8", "Rent": 17000, "Capacity": 14}
+        ]
 
     def _euclidean(self, coord1, coord2):
         """

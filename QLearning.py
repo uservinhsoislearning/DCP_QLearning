@@ -48,9 +48,10 @@ class QAgent:
         self.epsilon = max(self.min_epsilon, self.epsilon * self.epsilon_decay)
 
     # --- 3. ENVIRONMENT & TRAINING LOGIC ---
-    def solve(self,data_obj, episodes=1000):
-        agent = QAgent(num_states=data_obj.num_nodes)
-        
+    def solve(self, data_obj, episodes=1000):
+        """
+        Runs the training loop using the internal Q-table and parameters.
+        """
         best_total_dist = float('inf')
         best_routes = []
 
@@ -76,19 +77,18 @@ class QAgent:
                         
                         # Check Capacity & Time Window End
                         if (curr_load + data_obj.nodes[cand]['demand'] <= data_obj.vehicle_cap) and \
-                        (arrival_time <= data_obj.nodes[cand]['tw_end']):
+                           (arrival_time <= data_obj.nodes[cand]['tw_end']):
                             valid_actions.append(cand)
                     
                     # 2. Agent chooses action
-                    # If no valid customer nodes, we must return to depot (End Route)
                     if not valid_actions:
                         next_node = 0 
                     else:
-                        next_node = agent.choose_action(curr_node, valid_actions)
+                        next_node = self.choose_action(curr_node, valid_actions)
 
                     # 3. Execute Step
                     dist = data_obj.dist_mat[curr_node][next_node]
-                    reward = -dist * 10 # Negative reward for distance (scaled for stability)
+                    reward = -dist * 10 
                     
                     # Update State
                     if next_node != 0:
@@ -100,16 +100,16 @@ class QAgent:
                         unvisited.remove(next_node)
                         route.append(next_node)
                         
-                        # Look ahead for learning (next possible actions from new node)
-                        future_actions = [n for n in unvisited] # Simplified lookahead
-                        agent.learn(curr_node, next_node, reward, next_node, future_actions)
+                        # Look ahead for learning
+                        future_actions = [n for n in unvisited] 
+                        self.learn(curr_node, next_node, reward, next_node, future_actions)
                         
                         curr_node = next_node
                     else:
                         # Returning to Depot
                         route.append(0)
-                        agent.learn(curr_node, 0, reward, 0, []) # End of route learning
-                        break # Break inner loop to start new route
+                        self.learn(curr_node, 0, reward, 0, []) 
+                        break 
                 
                 routes.append(route)
                 # Calculate route distance
@@ -123,7 +123,7 @@ class QAgent:
                 best_total_dist = total_dist
                 best_routes = routes
                 
-            agent.decay()
+            self.decay()
 
         return best_routes, best_total_dist
 
