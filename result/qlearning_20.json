@@ -1,0 +1,162 @@
+{
+    "algorithm": "QLearning",
+    "data_path": "datasets/marine_debris_20.csv",
+    "initial_global_optimal_solution": [
+        {
+            "type": "T8",
+            "path": [
+                0,
+                16,
+                12,
+                15,
+                1,
+                4,
+                0
+            ],
+            "load": 13.41,
+            "cost": 34000,
+            "days_billed": 2,
+            "distance": 18.14
+        },
+        {
+            "type": "T8",
+            "path": [
+                0,
+                11,
+                10,
+                5,
+                17,
+                9,
+                0
+            ],
+            "load": 13.96,
+            "cost": 51000,
+            "days_billed": 3,
+            "distance": 23.919999999999998
+        },
+        {
+            "type": "T7",
+            "path": [
+                0,
+                20,
+                3,
+                13,
+                18,
+                8,
+                0
+            ],
+            "load": 12.990000000000002,
+            "cost": 48000,
+            "days_billed": 3,
+            "distance": 24.64
+        },
+        {
+            "type": "T8",
+            "path": [
+                0,
+                2,
+                19,
+                7,
+                14,
+                0
+            ],
+            "load": 13.190000000000001,
+            "cost": 51000,
+            "days_billed": 3,
+            "distance": 19.02
+        },
+        {
+            "type": "T1",
+            "path": [
+                0,
+                6,
+                0
+            ],
+            "load": 3.1,
+            "cost": 20000,
+            "days_billed": 2,
+            "distance": 13.32
+        }
+    ],
+    "final_global_optimal_solution": [
+        {
+            "type": "T8",
+            "path": [
+                0,
+                7,
+                5,
+                16,
+                0
+            ],
+            "load": 13.920000000000002,
+            "cost": 34000,
+            "days_billed": 2,
+            "distance": 7.63
+        },
+        {
+            "type": "T8",
+            "path": [
+                0,
+                2,
+                11,
+                13,
+                19,
+                0
+            ],
+            "load": 13.79,
+            "cost": 34000,
+            "days_billed": 2,
+            "distance": 13.330000000000002
+        },
+        {
+            "type": "T8",
+            "path": [
+                0,
+                18,
+                14,
+                6,
+                4,
+                10,
+                8,
+                1,
+                0
+            ],
+            "load": 13.98,
+            "cost": 34000,
+            "days_billed": 2,
+            "distance": 15.38
+        },
+        {
+            "type": "T4",
+            "path": [
+                0,
+                9,
+                3,
+                12,
+                20,
+                17,
+                0
+            ],
+            "load": 9.94,
+            "cost": 26000,
+            "days_billed": 2,
+            "distance": 16.880000000000003
+        },
+        {
+            "type": "T1",
+            "path": [
+                0,
+                15,
+                0
+            ],
+            "load": 5.02,
+            "cost": 10000,
+            "days_billed": 1,
+            "distance": 8.56
+        }
+    ],
+    "initial_global_optimal_cost": 204000,
+    "final_global_optimal_cost": 138000,
+    "cost_diff": -18000,
+    "executing_time": 0.8254106044769287
+}
