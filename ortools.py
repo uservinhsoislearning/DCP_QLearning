@@ -6,7 +6,7 @@ from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
 import IOReader as io
 
-class CVRPTWSolver:
+class DCPSolver:
     def __init__(self, data_model: io.Data):
         self.data = data_model
         self.data.calcDistMat() 
@@ -212,7 +212,7 @@ if __name__ == "__main__":
         data_loader = io.Data(csv_path)
         
         # 3. Initialize Solver
-        solver = CVRPTWSolver(data_loader)
+        solver = DCPSolver(data_loader)
         
         # 4. Run & Capture
         result = solver.solve()

@@ -1,9 +1,8 @@
 {
     "algorithm": "ORTOOLS",
-    "data_path": "datasets/marine_debris_20.csv",
+    "data_path": "/kaggle/input/dataset/marine_debris_20.csv",
     "initial_global_optimal_solution": [
         {
-            "vehicle_id": 1,
             "type": "T2",
             "path": [
                 0,
@@ -12,11 +11,13 @@
                 10,
                 0
             ],
-            "load": 7.29,
-            "distance": 14.629999999999999
+            "final_load": 7.29,
+            "distance": 14.629999999999999,
+            "duration_hours": 17.99899999999616,
+            "days_billed": 2,
+            "cost": 22387.043649999923
         },
         {
-            "vehicle_id": 4,
             "type": "T5",
             "path": [
                 0,
@@ -26,11 +27,13 @@
                 18,
                 0
             ],
-            "load": 10.8,
-            "distance": 13.190000000000001
+            "final_load": 10.8,
+            "distance": 13.190000000000001,
+            "duration_hours": 17.99899999999616,
+            "days_billed": 2,
+            "cost": 50781.406949999844
         },
         {
-            "vehicle_id": 6,
             "type": "T7",
             "path": [
                 0,
@@ -40,11 +43,13 @@
                 5,
                 0
             ],
-            "load": 12.53,
-            "distance": 10.85
+            "final_load": 12.53,
+            "distance": 10.85,
+            "duration_hours": 16.389999999999418,
+            "days_billed": 2,
+            "cost": 83143.62734999984
         },
         {
-            "vehicle_id": 8,
             "type": "T1",
             "path": [
                 0,
@@ -52,11 +57,13 @@
                 9,
                 0
             ],
-            "load": 6.59,
-            "distance": 8.5
+            "final_load": 6.59,
+            "distance": 8.5,
+            "duration_hours": 17.99899999999616,
+            "days_billed": 2,
+            "cost": 103519.32089999976
         },
         {
-            "vehicle_id": 12,
             "type": "T5",
             "path": [
                 0,
@@ -65,11 +72,13 @@
                 19,
                 0
             ],
-            "load": 10.18,
-            "distance": 14.18
+            "final_load": 10.18,
+            "distance": 14.18,
+            "duration_hours": 17.99899999999616,
+            "days_billed": 2,
+            "cost": 131914.9131499997
         },
         {
-            "vehicle_id": 19,
             "type": "T4",
             "path": [
                 0,
@@ -79,13 +88,15 @@
                 1,
                 0
             ],
-            "load": 9.26,
-            "distance": 9.510000000000002
+            "final_load": 9.26,
+            "distance": 9.510000000000002,
+            "duration_hours": 17.99899999999616,
+            "days_billed": 2,
+            "cost": 158298.04214999962
         }
     ],
     "final_global_optimal_solution": [
         {
-            "vehicle_id": 1,
             "type": "T2",
             "path": [
                 0,
@@ -94,11 +105,13 @@
                 10,
                 0
             ],
-            "load": 7.29,
-            "distance": 14.629999999999999
+            "final_load": 7.29,
+            "distance": 14.629999999999999,
+            "duration_hours": 17.99899999999616,
+            "days_billed": 2,
+            "cost": 22387.043649999923
         },
         {
-            "vehicle_id": 4,
             "type": "T5",
             "path": [
                 0,
@@ -108,11 +121,13 @@
                 18,
                 0
             ],
-            "load": 10.8,
-            "distance": 13.190000000000001
+            "final_load": 10.8,
+            "distance": 13.190000000000001,
+            "duration_hours": 17.99899999999616,
+            "days_billed": 2,
+            "cost": 50781.406949999844
         },
         {
-            "vehicle_id": 6,
             "type": "T7",
             "path": [
                 0,
@@ -122,11 +137,13 @@
                 5,
                 0
             ],
-            "load": 12.53,
-            "distance": 10.85
+            "final_load": 12.53,
+            "distance": 10.85,
+            "duration_hours": 16.389999999999418,
+            "days_billed": 2,
+            "cost": 83143.62734999984
         },
         {
-            "vehicle_id": 8,
             "type": "T1",
             "path": [
                 0,
@@ -134,11 +151,13 @@
                 9,
                 0
             ],
-            "load": 6.59,
-            "distance": 8.5
+            "final_load": 6.59,
+            "distance": 8.5,
+            "duration_hours": 17.99899999999616,
+            "days_billed": 2,
+            "cost": 103519.32089999976
         },
         {
-            "vehicle_id": 12,
             "type": "T5",
             "path": [
                 0,
@@ -147,11 +166,13 @@
                 19,
                 0
             ],
-            "load": 10.18,
-            "distance": 14.18
+            "final_load": 10.18,
+            "distance": 14.18,
+            "duration_hours": 17.99899999999616,
+            "days_billed": 2,
+            "cost": 131914.9131499997
         },
         {
-            "vehicle_id": 19,
             "type": "T4",
             "path": [
                 0,
@@ -161,12 +182,15 @@
                 1,
                 0
             ],
-            "load": 9.26,
-            "distance": 9.510000000000002
+            "final_load": 9.26,
+            "distance": 9.510000000000002,
+            "duration_hours": 17.99899999999616,
+            "days_billed": 2,
+            "cost": 158298.04214999962
         }
     ],
-    "initial_global_optimal_cost": 156000,
-    "final_global_optimal_cost": 156000,
+    "initial_global_optimal_cost": 158298.04214999962,
+    "final_global_optimal_cost": 158298.04214999962,
     "cost_diff": 0.0,
-    "executing_time": 30.008951902389526
+    "executing_time": 30.007364511489868
 }

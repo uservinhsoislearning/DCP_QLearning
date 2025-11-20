@@ -6,76 +6,106 @@
             "type": "T8",
             "path": [
                 0,
-                16,
-                12,
-                15,
-                1,
-                4,
-                0
-            ],
-            "load": 13.41,
-            "cost": 34000,
-            "days_billed": 2,
-            "distance": 18.14
-        },
-        {
-            "type": "T8",
-            "path": [
-                0,
-                11,
-                10,
-                5,
-                17,
-                9,
-                0
-            ],
-            "load": 13.96,
-            "cost": 51000,
-            "days_billed": 3,
-            "distance": 23.919999999999998
-        },
-        {
-            "type": "T7",
-            "path": [
-                0,
-                20,
-                3,
-                13,
-                18,
-                8,
-                0
-            ],
-            "load": 12.990000000000002,
-            "cost": 48000,
-            "days_billed": 3,
-            "distance": 24.64
-        },
-        {
-            "type": "T8",
-            "path": [
-                0,
                 2,
-                19,
+                4,
+                16,
                 7,
-                14,
                 0
             ],
-            "load": 13.190000000000001,
-            "cost": 51000,
+            "final_load": 13.939999999999998,
+            "distance": 14.98,
+            "duration_hours": 20.82,
+            "days_billed": 2,
+            "costs": {
+                "rent": 34000,
+                "labor": 416.4,
+                "fuel": 36.95439999999999,
+                "total": 34453.354400000004
+            }
+        },
+        {
+            "type": "T8",
+            "path": [
+                0,
+                9,
+                11,
+                3,
+                5,
+                14,
+                17,
+                0
+            ],
+            "final_load": 13.950000000000001,
+            "distance": 25.279999999999998,
+            "duration_hours": 31.770000000000003,
             "days_billed": 3,
-            "distance": 19.02
+            "costs": {
+                "rent": 51000,
+                "labor": 635.4000000000001,
+                "fuel": 85.77050000000001,
+                "total": 51721.1705
+            }
+        },
+        {
+            "type": "T8",
+            "path": [
+                0,
+                8,
+                19,
+                10,
+                13,
+                1,
+                0
+            ],
+            "final_load": 13.7,
+            "distance": 18.47,
+            "duration_hours": 24.14,
+            "days_billed": 3,
+            "costs": {
+                "rent": 51000,
+                "labor": 482.8,
+                "fuel": 61.876400000000004,
+                "total": 51544.676400000004
+            }
+        },
+        {
+            "type": "T5",
+            "path": [
+                0,
+                6,
+                20,
+                12,
+                18,
+                0
+            ],
+            "final_load": 10.04,
+            "distance": 18.54,
+            "duration_hours": 22.78,
+            "days_billed": 2,
+            "costs": {
+                "rent": 28000,
+                "labor": 455.6,
+                "fuel": 48.5008,
+                "total": 28504.1008
+            }
         },
         {
             "type": "T1",
             "path": [
                 0,
-                6,
+                15,
                 0
             ],
-            "load": 3.1,
-            "cost": 20000,
-            "days_billed": 2,
-            "distance": 13.32
+            "final_load": 5.02,
+            "distance": 8.56,
+            "duration_hours": 9.84,
+            "days_billed": 1,
+            "costs": {
+                "rent": 10000,
+                "labor": 196.8,
+                "fuel": 10.742799999999999,
+                "total": 10207.5428
+            }
         }
     ],
     "final_global_optimal_solution": [
@@ -88,25 +118,37 @@
                 16,
                 0
             ],
-            "load": 13.920000000000002,
-            "cost": 34000,
+            "final_load": 13.920000000000002,
+            "distance": 7.63,
+            "duration_hours": 13.030000000000001,
             "days_billed": 2,
-            "distance": 7.63
+            "costs": {
+                "rent": 34000,
+                "labor": 260.6,
+                "fuel": 27.387050000000002,
+                "total": 34287.987049999996
+            }
         },
         {
             "type": "T8",
             "path": [
                 0,
                 2,
+                19,
                 11,
                 13,
-                19,
                 0
             ],
-            "load": 13.79,
-            "cost": 34000,
+            "final_load": 13.790000000000001,
+            "distance": 13.24,
+            "duration_hours": 18.98,
             "days_billed": 2,
-            "distance": 13.330000000000002
+            "costs": {
+                "rent": 34000,
+                "labor": 379.6,
+                "fuel": 48.63235,
+                "total": 34428.23235
+            }
         },
         {
             "type": "T8",
@@ -121,10 +163,16 @@
                 1,
                 0
             ],
-            "load": 13.98,
-            "cost": 34000,
+            "final_load": 13.98,
+            "distance": 15.38,
+            "duration_hours": 21.740000000000002,
             "days_billed": 2,
-            "distance": 15.38
+            "costs": {
+                "rent": 34000,
+                "labor": 434.80000000000007,
+                "fuel": 54.16805000000001,
+                "total": 34488.96805
+            }
         },
         {
             "type": "T4",
@@ -137,10 +185,16 @@
                 17,
                 0
             ],
-            "load": 9.94,
-            "cost": 26000,
+            "final_load": 9.94,
+            "distance": 16.880000000000003,
+            "duration_hours": 21.62,
             "days_billed": 2,
-            "distance": 16.880000000000003
+            "costs": {
+                "rent": 26000,
+                "labor": 432.40000000000003,
+                "fuel": 43.41135,
+                "total": 26475.81135
+            }
         },
         {
             "type": "T1",
@@ -149,14 +203,20 @@
                 15,
                 0
             ],
-            "load": 5.02,
-            "cost": 10000,
+            "final_load": 5.02,
+            "distance": 8.56,
+            "duration_hours": 9.84,
             "days_billed": 1,
-            "distance": 8.56
+            "costs": {
+                "rent": 10000,
+                "labor": 196.8,
+                "fuel": 10.742799999999999,
+                "total": 10207.5428
+            }
         }
     ],
-    "initial_global_optimal_cost": 204000,
-    "final_global_optimal_cost": 138000,
-    "cost_diff": -18000,
-    "executing_time": 0.8254106044769287
+    "initial_global_optimal_cost": 176430.84490000003,
+    "final_global_optimal_cost": 139888.5416,
+    "cost_diff": -18409.50054999962,
+    "executing_time": 0.885897159576416
 }
