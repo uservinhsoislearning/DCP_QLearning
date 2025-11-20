@@ -3,83 +3,20 @@
     "data_path": "/kaggle/input/dataset/marine_debris_100.csv",
     "initial_global_optimal_solution": [
         {
-            "type": "T2",
+            "type": "T1",
             "path": [
                 0,
-                89,
-                60,
-                40,
-                76,
+                79,
+                71,
+                9,
+                2,
                 0
             ],
-            "final_load": 7.98,
-            "distance": 7.73,
-            "duration_hours": 22.619,
+            "final_load": 6.699999999999999,
+            "distance": 18.340000000000003,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 22469.207300000002
-        },
-        {
-            "type": "T3",
-            "path": [
-                0,
-                50,
-                73,
-                68,
-                0
-            ],
-            "final_load": 8.969999999999999,
-            "distance": 16.07,
-            "duration_hours": 19.8,
-            "days_billed": 2,
-            "cost": 46901.11935
-        },
-        {
-            "type": "T4",
-            "path": [
-                0,
-                95,
-                94,
-                0
-            ],
-            "final_load": 9.89,
-            "distance": 10.969999999999999,
-            "duration_hours": 14.44,
-            "days_billed": 2,
-            "cost": 73217.20495
-        },
-        {
-            "type": "T7",
-            "path": [
-                0,
-                75,
-                82,
-                25,
-                29,
-                10,
-                0
-            ],
-            "final_load": 12.940000000000001,
-            "distance": 16.39,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 105721.10345
-        },
-        {
-            "type": "T8",
-            "path": [
-                0,
-                87,
-                99,
-                90,
-                98,
-                53,
-                0
-            ],
-            "final_load": 13.92,
-            "distance": 11.02,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 140212.18164999998
+            "cost": 20469.43649999996
         },
         {
             "type": "T2",
@@ -92,134 +29,149 @@
             ],
             "final_load": 7.79,
             "distance": 8.09,
-            "duration_hours": 22.619,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 162681.99284999998
+            "cost": 42918.44769999992
+        },
+        {
+            "type": "T3",
+            "path": [
+                0,
+                7,
+                94,
+                0
+            ],
+            "final_load": 8.75,
+            "distance": 10.11,
+            "duration_hours": 13.119999999995343,
+            "days_billed": 2,
+            "cost": 67203.68024999983
         },
         {
             "type": "T8",
             "path": [
                 0,
-                88,
-                57,
+                30,
+                95,
                 77,
-                69,
+                29,
                 0
             ],
-            "final_load": 13.64,
-            "distance": 13.649999999999999,
-            "duration_hours": 22.619,
+            "final_load": 14.0,
+            "distance": 15.51,
+            "duration_hours": 20.410000000003492,
             "days_billed": 2,
-            "cost": 197179.91744999998
+            "cost": 101678.83264999991
         },
         {
             "type": "T2",
             "path": [
                 0,
-                32,
-                71,
-                97,
-                0
-            ],
-            "final_load": 7.79,
-            "distance": 15.39,
-            "duration_hours": 19.01,
-            "days_billed": 2,
-            "cost": 219589.92344999997
-        },
-        {
-            "type": "T2",
-            "path": [
-                0,
+                11,
                 91,
-                15,
-                24,
+                12,
                 0
             ],
-            "final_load": 7.93,
-            "distance": 11.399999999999999,
-            "duration_hours": 22.619,
+            "final_load": 7.51,
+            "distance": 9.36,
+            "duration_hours": 12.330000000001746,
             "days_billed": 2,
-            "cost": 242065.03854999997
-        },
-        {
-            "type": "T4",
-            "path": [
-                0,
-                2,
-                66,
-                38,
-                16,
-                0
-            ],
-            "final_load": 9.899999999999999,
-            "distance": 18.71,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 268562.20609999995
-        },
-        {
-            "type": "T5",
-            "path": [
-                0,
-                31,
-                48,
-                80,
-                0
-            ],
-            "final_load": 10.85,
-            "distance": 15.54,
-            "duration_hours": 19.73,
-            "days_billed": 2,
-            "cost": 296996.19299999997
-        },
-        {
-            "type": "T6",
-            "path": [
-                0,
-                79,
-                9,
-                84,
-                42,
-                0
-            ],
-            "final_load": 11.95,
-            "distance": 17.68,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 327505.53569999995
+            "cost": 123944.60194999995
         },
         {
             "type": "T7",
             "path": [
                 0,
-                19,
-                81,
-                22,
+                97,
+                21,
+                13,
+                17,
                 0
             ],
-            "final_load": 12.75,
-            "distance": 15.71,
-            "duration_hours": 22.619,
+            "final_load": 12.85,
+            "distance": 15.0,
+            "duration_hours": 20.069999999992433,
             "days_billed": 2,
-            "cost": 360010.8965
+            "cost": 156386.7402999998
+        },
+        {
+            "type": "T4",
+            "path": [
+                0,
+                82,
+                25,
+                16,
+                0
+            ],
+            "final_load": 9.87,
+            "distance": 17.38,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 182864.50834999976
+        },
+        {
+            "type": "T5",
+            "path": [
+                0,
+                1,
+                100,
+                65,
+                53,
+                64,
+                0
+            ],
+            "final_load": 10.999999999999998,
+            "distance": 10.530000000000001,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 211322.97879999972
+        },
+        {
+            "type": "T6",
+            "path": [
+                0,
+                49,
+                14,
+                69,
+                0
+            ],
+            "final_load": 11.97,
+            "distance": 12.329999999999998,
+            "duration_hours": 16.789999999993597,
+            "days_billed": 2,
+            "cost": 241700.2292999996
+        },
+        {
+            "type": "T7",
+            "path": [
+                0,
+                22,
+                81,
+                23,
+                46,
+                0
+            ],
+            "final_load": 12.7,
+            "distance": 16.259999999999998,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 274184.03874999954
         },
         {
             "type": "T8",
             "path": [
                 0,
-                20,
-                63,
+                58,
+                43,
                 26,
                 36,
-                44,
                 0
             ],
-            "final_load": 13.92,
-            "distance": 14.309999999999999,
-            "duration_hours": 22.619,
+            "final_load": 13.93,
+            "distance": 13.59,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 394516.61439999996
+            "cost": 308666.0094499995
         },
         {
             "type": "T1",
@@ -231,23 +183,132 @@
             ],
             "final_load": 6.89,
             "distance": 12.440000000000001,
-            "duration_hours": 22.619,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 414991.81165
+            "cost": 329120.40669999947
         },
         {
             "type": "T2",
             "path": [
                 0,
-                37,
-                30,
+                5,
+                61,
+                39,
                 0
             ],
-            "final_load": 7.63,
-            "distance": 9.98,
-            "duration_hours": 22.619,
+            "final_load": 7.700000000000001,
+            "distance": 8.45,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 437465.1371
+            "cost": 351567.69289999944
+        },
+        {
+            "type": "T3",
+            "path": [
+                0,
+                87,
+                63,
+                27,
+                0
+            ],
+            "final_load": 8.8,
+            "distance": 11.25,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 376024.4153999994
+        },
+        {
+            "type": "T4",
+            "path": [
+                0,
+                35,
+                33,
+                44,
+                8,
+                0
+            ],
+            "final_load": 9.92,
+            "distance": 14.290000000000001,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 402497.43304999935
+        },
+        {
+            "type": "T5",
+            "path": [
+                0,
+                57,
+                55,
+                32,
+                75,
+                0
+            ],
+            "final_load": 10.7,
+            "distance": 16.54,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 430979.9494499993
+        },
+        {
+            "type": "T6",
+            "path": [
+                0,
+                70,
+                19,
+                68,
+                0
+            ],
+            "final_load": 11.96,
+            "distance": 13.98,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 461457.60024999926
+        },
+        {
+            "type": "T7",
+            "path": [
+                0,
+                20,
+                72,
+                15,
+                90,
+                0
+            ],
+            "final_load": 12.830000000000002,
+            "distance": 12.0,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 493927.2336499992
+        },
+        {
+            "type": "T8",
+            "path": [
+                0,
+                83,
+                34,
+                3,
+                0
+            ],
+            "final_load": 13.849999999999998,
+            "distance": 10.82,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 528397.2633999991
+        },
+        {
+            "type": "T1",
+            "path": [
+                0,
+                89,
+                40,
+                76,
+                0
+            ],
+            "final_load": 6.54,
+            "distance": 7.72,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 548842.5785999991
         },
         {
             "type": "T3",
@@ -259,119 +320,9 @@
             ],
             "final_load": 8.879999999999999,
             "distance": 8.97,
-            "duration_hours": 22.619,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 461936.77005
-        },
-        {
-            "type": "T5",
-            "path": [
-                0,
-                7,
-                27,
-                70,
-                0
-            ],
-            "final_load": 10.92,
-            "distance": 11.56,
-            "duration_hours": 14.74,
-            "days_billed": 2,
-            "cost": 490265.95905
-        },
-        {
-            "type": "T6",
-            "path": [
-                0,
-                92,
-                47,
-                93,
-                100,
-                0
-            ],
-            "final_load": 11.969999999999999,
-            "distance": 11.27,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 520751.22285
-        },
-        {
-            "type": "T7",
-            "path": [
-                0,
-                17,
-                35,
-                55,
-                23,
-                8,
-                46,
-                0
-            ],
-            "final_load": 12.950000000000001,
-            "distance": 16.51,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 553259.52425
-        },
-        {
-            "type": "T8",
-            "path": [
-                0,
-                83,
-                34,
-                72,
-                65,
-                0
-            ],
-            "final_load": 13.98,
-            "distance": 10.92,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 587750.85405
-        },
-        {
-            "type": "T1",
-            "path": [
-                0,
-                33,
-                14,
-                0
-            ],
-            "final_load": 6.94,
-            "distance": 11.2,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 608221.2550499999
-        },
-        {
-            "type": "T2",
-            "path": [
-                0,
-                13,
-                49,
-                45,
-                0
-            ],
-            "final_load": 7.6,
-            "distance": 10.530000000000001,
-            "duration_hours": 13.81,
-            "days_billed": 2,
-            "cost": 630516.9379499999
-        },
-        {
-            "type": "T3",
-            "path": [
-                0,
-                64,
-                43,
-                51,
-                1,
-                0
-            ],
-            "final_load": 8.87,
-            "distance": 11.649999999999999,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 654996.1719999999
+            "cost": 573293.411549999
         },
         {
             "type": "T4",
@@ -384,152 +335,138 @@
             ],
             "final_load": 9.45,
             "distance": 10.35,
-            "duration_hours": 22.619,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 681474.6839999999
+            "cost": 599751.123549999
+        },
+        {
+            "type": "T5",
+            "path": [
+                0,
+                73,
+                80,
+                67,
+                88,
+                10,
+                45,
+                0
+            ],
+            "final_load": 10.809999999999999,
+            "distance": 15.82,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 628223.7090499989
+        },
+        {
+            "type": "T6",
+            "path": [
+                0,
+                50,
+                41,
+                42,
+                31,
+                37,
+                0
+            ],
+            "final_load": 11.86,
+            "distance": 15.350000000000001,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 658692.8978999988
         },
         {
             "type": "T7",
             "path": [
                 0,
-                11,
-                3,
-                18,
-                12,
+                92,
+                28,
+                56,
+                78,
                 0
             ],
-            "final_load": 12.99,
-            "distance": 12.46,
-            "duration_hours": 22.619,
+            "final_load": 12.87,
+            "distance": 11.239999999999998,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 713971.8123499999
+            "cost": 691157.5429999988
         },
         {
             "type": "T8",
             "path": [
                 0,
-                28,
-                56,
-                78,
-                58,
+                51,
+                18,
+                47,
+                93,
                 0
             ],
-            "final_load": 13.549999999999999,
-            "distance": 10.87,
-            "duration_hours": 22.619,
+            "final_load": 13.959999999999999,
+            "distance": 12.52,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 748456.6817999999
+            "cost": 725629.8590999987
         },
         {
             "type": "T1",
             "path": [
                 0,
-                21,
-                67,
-                41,
+                98,
+                99,
+                24,
+                60,
                 0
             ],
-            "final_load": 6.93,
-            "distance": 16.05,
-            "duration_hours": 22.619,
+            "final_load": 6.92,
+            "distance": 9.3,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 768942.2095499999
+            "cost": 746075.8336499986
         },
         {
             "type": "T2",
             "path": [
                 0,
-                39,
-                61,
-                5,
+                38,
+                66,
                 0
             ],
-            "final_load": 7.7,
-            "distance": 8.45,
-            "duration_hours": 22.619,
+            "final_load": 7.9,
+            "distance": 18.04,
+            "duration_hours": 20.59900000000198,
             "days_billed": 2,
-            "cost": 791411.4158499999
+            "cost": 768523.6004999987
+        },
+        {
+            "type": "T3",
+            "path": [
+                0,
+                48,
+                84,
+                0
+            ],
+            "final_load": 8.56,
+            "distance": 17.02,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 792991.9682499986
         }
     ],
     "final_global_optimal_solution": [
         {
-            "type": "T2",
+            "type": "T1",
             "path": [
                 0,
-                89,
-                60,
-                40,
-                76,
+                79,
+                71,
+                9,
+                2,
                 0
             ],
-            "final_load": 7.98,
-            "distance": 7.73,
-            "duration_hours": 22.619,
+            "final_load": 6.699999999999999,
+            "distance": 18.340000000000003,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 22469.207300000002
-        },
-        {
-            "type": "T3",
-            "path": [
-                0,
-                50,
-                73,
-                68,
-                0
-            ],
-            "final_load": 8.969999999999999,
-            "distance": 16.07,
-            "duration_hours": 19.8,
-            "days_billed": 2,
-            "cost": 46901.11935
-        },
-        {
-            "type": "T4",
-            "path": [
-                0,
-                95,
-                94,
-                0
-            ],
-            "final_load": 9.89,
-            "distance": 10.969999999999999,
-            "duration_hours": 14.44,
-            "days_billed": 2,
-            "cost": 73217.20495
-        },
-        {
-            "type": "T7",
-            "path": [
-                0,
-                75,
-                82,
-                25,
-                29,
-                10,
-                0
-            ],
-            "final_load": 12.940000000000001,
-            "distance": 16.39,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 105721.10345
-        },
-        {
-            "type": "T8",
-            "path": [
-                0,
-                87,
-                99,
-                90,
-                98,
-                53,
-                0
-            ],
-            "final_load": 13.92,
-            "distance": 11.02,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 140212.18164999998
+            "cost": 20469.43649999996
         },
         {
             "type": "T2",
@@ -542,134 +479,149 @@
             ],
             "final_load": 7.79,
             "distance": 8.09,
-            "duration_hours": 22.619,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 162681.99284999998
+            "cost": 42918.44769999992
+        },
+        {
+            "type": "T3",
+            "path": [
+                0,
+                7,
+                94,
+                0
+            ],
+            "final_load": 8.75,
+            "distance": 10.11,
+            "duration_hours": 13.119999999995343,
+            "days_billed": 2,
+            "cost": 67203.68024999983
         },
         {
             "type": "T8",
             "path": [
                 0,
-                88,
-                57,
+                30,
+                95,
                 77,
-                69,
+                29,
                 0
             ],
-            "final_load": 13.64,
-            "distance": 13.649999999999999,
-            "duration_hours": 22.619,
+            "final_load": 14.0,
+            "distance": 15.51,
+            "duration_hours": 20.410000000003492,
             "days_billed": 2,
-            "cost": 197179.91744999998
+            "cost": 101678.83264999991
         },
         {
             "type": "T2",
             "path": [
                 0,
-                32,
-                71,
-                97,
-                0
-            ],
-            "final_load": 7.79,
-            "distance": 15.39,
-            "duration_hours": 19.01,
-            "days_billed": 2,
-            "cost": 219589.92344999997
-        },
-        {
-            "type": "T2",
-            "path": [
-                0,
+                11,
                 91,
-                15,
-                24,
+                12,
                 0
             ],
-            "final_load": 7.93,
-            "distance": 11.399999999999999,
-            "duration_hours": 22.619,
+            "final_load": 7.51,
+            "distance": 9.36,
+            "duration_hours": 12.330000000001746,
             "days_billed": 2,
-            "cost": 242065.03854999997
-        },
-        {
-            "type": "T4",
-            "path": [
-                0,
-                2,
-                66,
-                38,
-                16,
-                0
-            ],
-            "final_load": 9.899999999999999,
-            "distance": 18.71,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 268562.20609999995
-        },
-        {
-            "type": "T5",
-            "path": [
-                0,
-                31,
-                48,
-                80,
-                0
-            ],
-            "final_load": 10.85,
-            "distance": 15.54,
-            "duration_hours": 19.73,
-            "days_billed": 2,
-            "cost": 296996.19299999997
-        },
-        {
-            "type": "T6",
-            "path": [
-                0,
-                79,
-                9,
-                84,
-                42,
-                0
-            ],
-            "final_load": 11.95,
-            "distance": 17.68,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 327505.53569999995
+            "cost": 123944.60194999995
         },
         {
             "type": "T7",
             "path": [
                 0,
-                19,
-                81,
-                22,
+                97,
+                21,
+                13,
+                17,
                 0
             ],
-            "final_load": 12.75,
-            "distance": 15.71,
-            "duration_hours": 22.619,
+            "final_load": 12.85,
+            "distance": 15.0,
+            "duration_hours": 20.069999999992433,
             "days_billed": 2,
-            "cost": 360010.8965
+            "cost": 156386.7402999998
+        },
+        {
+            "type": "T4",
+            "path": [
+                0,
+                82,
+                25,
+                16,
+                0
+            ],
+            "final_load": 9.87,
+            "distance": 17.38,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 182864.50834999976
+        },
+        {
+            "type": "T5",
+            "path": [
+                0,
+                1,
+                100,
+                65,
+                53,
+                64,
+                0
+            ],
+            "final_load": 10.999999999999998,
+            "distance": 10.530000000000001,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 211322.97879999972
+        },
+        {
+            "type": "T6",
+            "path": [
+                0,
+                49,
+                14,
+                69,
+                0
+            ],
+            "final_load": 11.97,
+            "distance": 12.329999999999998,
+            "duration_hours": 16.789999999993597,
+            "days_billed": 2,
+            "cost": 241700.2292999996
+        },
+        {
+            "type": "T7",
+            "path": [
+                0,
+                22,
+                81,
+                23,
+                46,
+                0
+            ],
+            "final_load": 12.7,
+            "distance": 16.259999999999998,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 274184.03874999954
         },
         {
             "type": "T8",
             "path": [
                 0,
-                20,
-                63,
+                58,
+                43,
                 26,
                 36,
-                44,
                 0
             ],
-            "final_load": 13.92,
-            "distance": 14.309999999999999,
-            "duration_hours": 22.619,
+            "final_load": 13.93,
+            "distance": 13.59,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 394516.61439999996
+            "cost": 308666.0094499995
         },
         {
             "type": "T1",
@@ -681,23 +633,132 @@
             ],
             "final_load": 6.89,
             "distance": 12.440000000000001,
-            "duration_hours": 22.619,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 414991.81165
+            "cost": 329120.40669999947
         },
         {
             "type": "T2",
             "path": [
                 0,
-                37,
-                30,
+                5,
+                61,
+                39,
                 0
             ],
-            "final_load": 7.63,
-            "distance": 9.98,
-            "duration_hours": 22.619,
+            "final_load": 7.700000000000001,
+            "distance": 8.45,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 437465.1371
+            "cost": 351567.69289999944
+        },
+        {
+            "type": "T3",
+            "path": [
+                0,
+                87,
+                63,
+                27,
+                0
+            ],
+            "final_load": 8.8,
+            "distance": 11.25,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 376024.4153999994
+        },
+        {
+            "type": "T4",
+            "path": [
+                0,
+                35,
+                33,
+                44,
+                8,
+                0
+            ],
+            "final_load": 9.92,
+            "distance": 14.290000000000001,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 402497.43304999935
+        },
+        {
+            "type": "T5",
+            "path": [
+                0,
+                57,
+                55,
+                32,
+                75,
+                0
+            ],
+            "final_load": 10.7,
+            "distance": 16.54,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 430979.9494499993
+        },
+        {
+            "type": "T6",
+            "path": [
+                0,
+                70,
+                19,
+                68,
+                0
+            ],
+            "final_load": 11.96,
+            "distance": 13.98,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 461457.60024999926
+        },
+        {
+            "type": "T7",
+            "path": [
+                0,
+                20,
+                72,
+                15,
+                90,
+                0
+            ],
+            "final_load": 12.830000000000002,
+            "distance": 12.0,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 493927.2336499992
+        },
+        {
+            "type": "T8",
+            "path": [
+                0,
+                83,
+                34,
+                3,
+                0
+            ],
+            "final_load": 13.849999999999998,
+            "distance": 10.82,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 528397.2633999991
+        },
+        {
+            "type": "T1",
+            "path": [
+                0,
+                89,
+                40,
+                76,
+                0
+            ],
+            "final_load": 6.54,
+            "distance": 7.72,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 548842.5785999991
         },
         {
             "type": "T3",
@@ -709,119 +770,9 @@
             ],
             "final_load": 8.879999999999999,
             "distance": 8.97,
-            "duration_hours": 22.619,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 461936.77005
-        },
-        {
-            "type": "T5",
-            "path": [
-                0,
-                7,
-                27,
-                70,
-                0
-            ],
-            "final_load": 10.92,
-            "distance": 11.56,
-            "duration_hours": 14.74,
-            "days_billed": 2,
-            "cost": 490265.95905
-        },
-        {
-            "type": "T6",
-            "path": [
-                0,
-                92,
-                47,
-                93,
-                100,
-                0
-            ],
-            "final_load": 11.969999999999999,
-            "distance": 11.27,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 520751.22285
-        },
-        {
-            "type": "T7",
-            "path": [
-                0,
-                17,
-                35,
-                55,
-                23,
-                8,
-                46,
-                0
-            ],
-            "final_load": 12.950000000000001,
-            "distance": 16.51,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 553259.52425
-        },
-        {
-            "type": "T8",
-            "path": [
-                0,
-                83,
-                34,
-                72,
-                65,
-                0
-            ],
-            "final_load": 13.98,
-            "distance": 10.92,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 587750.85405
-        },
-        {
-            "type": "T1",
-            "path": [
-                0,
-                33,
-                14,
-                0
-            ],
-            "final_load": 6.94,
-            "distance": 11.2,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 608221.2550499999
-        },
-        {
-            "type": "T2",
-            "path": [
-                0,
-                13,
-                49,
-                45,
-                0
-            ],
-            "final_load": 7.6,
-            "distance": 10.530000000000001,
-            "duration_hours": 13.81,
-            "days_billed": 2,
-            "cost": 630516.9379499999
-        },
-        {
-            "type": "T3",
-            "path": [
-                0,
-                64,
-                43,
-                51,
-                1,
-                0
-            ],
-            "final_load": 8.87,
-            "distance": 11.649999999999999,
-            "duration_hours": 22.619,
-            "days_billed": 2,
-            "cost": 654996.1719999999
+            "cost": 573293.411549999
         },
         {
             "type": "T4",
@@ -834,75 +785,124 @@
             ],
             "final_load": 9.45,
             "distance": 10.35,
-            "duration_hours": 22.619,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 681474.6839999999
+            "cost": 599751.123549999
+        },
+        {
+            "type": "T5",
+            "path": [
+                0,
+                73,
+                80,
+                67,
+                88,
+                10,
+                45,
+                0
+            ],
+            "final_load": 10.809999999999999,
+            "distance": 15.82,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 628223.7090499989
+        },
+        {
+            "type": "T6",
+            "path": [
+                0,
+                50,
+                41,
+                42,
+                31,
+                37,
+                0
+            ],
+            "final_load": 11.86,
+            "distance": 15.350000000000001,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 658692.8978999988
         },
         {
             "type": "T7",
             "path": [
                 0,
-                11,
-                3,
-                18,
-                12,
+                92,
+                28,
+                56,
+                78,
                 0
             ],
-            "final_load": 12.99,
-            "distance": 12.46,
-            "duration_hours": 22.619,
+            "final_load": 12.87,
+            "distance": 11.239999999999998,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 713971.8123499999
+            "cost": 691157.5429999988
         },
         {
             "type": "T8",
             "path": [
                 0,
-                28,
-                56,
-                78,
-                58,
+                51,
+                18,
+                47,
+                93,
                 0
             ],
-            "final_load": 13.549999999999999,
-            "distance": 10.87,
-            "duration_hours": 22.619,
+            "final_load": 13.959999999999999,
+            "distance": 12.52,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 748456.6817999999
+            "cost": 725629.8590999987
         },
         {
             "type": "T1",
             "path": [
                 0,
-                21,
-                67,
-                41,
+                98,
+                99,
+                24,
+                60,
                 0
             ],
-            "final_load": 6.93,
-            "distance": 16.05,
-            "duration_hours": 22.619,
+            "final_load": 6.92,
+            "distance": 9.3,
+            "duration_hours": 21.578999999997905,
             "days_billed": 2,
-            "cost": 768942.2095499999
+            "cost": 746075.8336499986
         },
         {
             "type": "T2",
             "path": [
                 0,
-                39,
-                61,
-                5,
+                38,
+                66,
                 0
             ],
-            "final_load": 7.7,
-            "distance": 8.45,
-            "duration_hours": 22.619,
+            "final_load": 7.9,
+            "distance": 18.04,
+            "duration_hours": 20.59900000000198,
             "days_billed": 2,
-            "cost": 791411.4158499999
+            "cost": 768523.6004999987
+        },
+        {
+            "type": "T3",
+            "path": [
+                0,
+                48,
+                84,
+                0
+            ],
+            "final_load": 8.56,
+            "distance": 17.02,
+            "duration_hours": 21.578999999997905,
+            "days_billed": 2,
+            "cost": 792991.9682499986
         }
     ],
-    "initial_global_optimal_cost": 791411.4158499999,
-    "final_global_optimal_cost": 791411.4158499999,
+    "initial_global_optimal_cost": 792991.9682499986,
+    "final_global_optimal_cost": 792991.9682499986,
     "cost_diff": 0.0,
-    "executing_time": 30.007667541503906
+    "executing_time": 30.07510280609131
 }

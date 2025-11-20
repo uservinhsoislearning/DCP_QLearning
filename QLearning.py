@@ -19,7 +19,6 @@ class QLearningSolver:
         self.epsilon_decay = epsilon_decay
         self.min_epsilon = min_epsilon
         
-        # Initialize Q-Table [Current Node][Next Node]
         self.q_table = np.zeros((self.num_nodes, self.num_nodes))
         
         # Environment Settings
@@ -30,6 +29,21 @@ class QLearningSolver:
         # --- COST CONSTANTS ---
         self.FUEL_COST_PER_KM_TON = 0.5  # $0.50 per km per ton
         self.LABOR_COST_PER_HOUR = 20.0  # $20.00 per hour
+
+    def get_step_cost(self, distance, current_load):
+        """
+        Calculates the immediate variable cost of moving from A to B.
+        Cost = Fuel (based on weight) + Labor (based on time)
+        """
+        # 1. Fuel Cost: Distance * Load * Rate
+        # (Note: This uses the load CARRIED during the trip)
+        fuel = distance * current_load * self.FUEL_COST_PER_KM_TON
+        
+        # 2. Labor Cost: Time * Hourly Rate
+        travel_time = distance / self.speed
+        labor = travel_time * self.LABOR_COST_PER_HOUR
+        
+        return fuel + labor
 
     def get_valid_actions(self, current_node, unvisited, current_load, current_time):
         valid_nodes = []
@@ -79,28 +93,19 @@ class QLearningSolver:
         return best_vehicle
 
     def calculate_solution_metrics(self, routes):
-        """
-        Calculates detailed costs: Rent, Fuel (cumulative weight), and Labor.
-        """
         total_combined_cost = 0
         detailed_routes = []
 
         for route_indices in routes:
-            # 1. Calculate Route Load
             route_load = sum(self.data.demands[n] for n in route_indices)
-            
-            # 2. Assign Vehicle
             vehicle = self.assign_vehicle(route_load)
             base_rent = vehicle['Rent']
 
-            # 3. Simulate Path for Time, Distance, and Fuel
             curr_node = 0
             curr_time = self.data.time_windows[0][0] 
-            
-            running_load = 0 # Load currently on the ship
+            running_load = 0 
             route_fuel_cost = 0
             route_dist = 0
-            
             path_ids = [self.data.ids[0]] 
             start_time = curr_time 
 
@@ -108,26 +113,21 @@ class QLearningSolver:
                 dist = self.data.dist_matrix[curr_node][node]
                 route_dist += dist
                 
-                # -- FUEL CALCULATION --
-                # Cost to move the *current* load across this distance
+                # Fuel (Carrying current load)
                 route_fuel_cost += (dist * running_load * self.FUEL_COST_PER_KM_TON)
                 
-                # -- TIME CALCULATION --
                 travel_time = dist / self.speed
                 arrival_time = max(curr_time + travel_time, self.data.time_windows[node][0])
                 curr_time = arrival_time + self.data.service_times[node]
                 
-                # -- LOAD UPDATE --
-                running_load += self.data.demands[node] # Pickup waste
-                
+                running_load += self.data.demands[node]
                 curr_node = node
                 path_ids.append(self.data.ids[node])
 
             # Return to Depot
             d_end = self.data.dist_matrix[curr_node][0]
             route_dist += d_end
-            
-            # Fuel for return trip (carrying max load)
+            # Fuel (Carrying Full Load)
             route_fuel_cost += (d_end * running_load * self.FUEL_COST_PER_KM_TON)
             
             curr_time += (d_end / self.speed)
@@ -136,15 +136,12 @@ class QLearningSolver:
             end_time = curr_time
             duration = end_time - start_time
             
-            # 4. Labor Cost
             labor_cost = duration * self.LABOR_COST_PER_HOUR
             
-            # 5. Rent Cost (Day Rate)
             days_billed = math.ceil(duration / self.DAY_LENGTH)
             if days_billed == 0: days_billed = 1
             rent_cost = base_rent * days_billed
             
-            # 6. Total
             vehicle_total_cost = rent_cost + labor_cost + route_fuel_cost
             total_combined_cost += vehicle_total_cost
 
@@ -155,27 +152,19 @@ class QLearningSolver:
                 "distance": route_dist,
                 "duration_hours": duration,
                 "days_billed": days_billed,
-                "costs": {
-                    "rent": rent_cost,
-                    "labor": labor_cost,
-                    "fuel": route_fuel_cost,
-                    "total": vehicle_total_cost
-                }
+                "cost": vehicle_total_cost
             })
 
         return detailed_routes, total_combined_cost
 
     def solve(self, csv_path, episodes=2000):
-        print(f"Training Q-Learning Agent over {episodes} episodes...")
+        print(f"Training Q-Learning Agent over {episodes} episodes to MINIMIZE TOTAL COST...")
         
-        # Metrics Storage
         initial_solution_data = None
         initial_cost = 0
-        
         best_global_cost = float('inf')
         best_solution_data = None
 
-        # --- START TIMER ---
         start_time = time.time()
 
         for ep in range(episodes):
@@ -200,12 +189,14 @@ class QLearningSolver:
                     
                     dist = self.data.dist_matrix[current_node][next_node]
                     
-                    # REWARD FUNCTION 
-                    # We still minimize distance primarily during training as a proxy for cost,
-                    # but exact cost minimization in Q-learning requires complex state space.
-                    reward = -dist 
-                    
+                    # --- UPDATED REWARD FUNCTION ---
+                    # We now calculate the explicit monetary cost of this step.
+                    # Reward is negative cost.
                     if next_node != 0:
+                        step_cost = self.get_step_cost(dist, current_load)
+                        reward = -step_cost
+                        
+                        # State Updates
                         travel_time = dist / self.speed
                         arrival_time = max(current_time + travel_time, self.data.time_windows[next_node][0])
                         service_time = self.data.service_times[next_node]
@@ -224,32 +215,29 @@ class QLearningSolver:
                         unvisited.remove(next_node)
                         route.append(current_node)
                     else:
+                        # Return to Depot Cost (High fuel because load is full)
+                        step_cost = self.get_step_cost(dist, current_load)
+                        reward = -step_cost
+                        
                         self.learn(current_node, 0, reward, 0, [])
                         break 
                 
                 routes.append(route)
             
-            # --- METRIC CALCULATION ---
-            # Calculate precise cost for this episode's solution
             detailed_routes, episode_cost = self.calculate_solution_metrics(routes)
 
-            # Capture Episode 0
             if ep == 0:
                 initial_solution_data = detailed_routes
                 initial_cost = episode_cost
 
-            # Update Global Best (Minimizing COST)
             if episode_cost < best_global_cost:
                 best_global_cost = episode_cost
                 best_solution_data = detailed_routes
             
-            # Decay Epsilon
             self.epsilon = max(self.min_epsilon, self.epsilon * self.epsilon_decay)
 
-        # --- END TIMER ---
         executing_time = time.time() - start_time
         
-        # --- JSON GENERATION ---
         self.save_results(
             csv_path, 
             initial_solution_data, 
@@ -260,12 +248,10 @@ class QLearningSolver:
         )
 
     def save_results(self, data_path, init_sol, init_cost, final_sol, final_cost, exec_time):
-        # Check directory exists
         RESULT_DIR = "result/"
         if not os.path.exists(RESULT_DIR):
             os.makedirs(RESULT_DIR)
 
-        # 1. Read OR-Tools result for comparison
         ortools_cost = 0
         cost_diff = 0
         ortools_file = os.path.join(RESULT_DIR, "ortools_100.json")
@@ -275,14 +261,12 @@ class QLearningSolver:
                 with open(ortools_file, 'r') as f:
                     or_data = json.load(f)
                     ortools_cost = or_data.get("final_global_optimal_cost", 0)
-                    # Diff = QLearning Cost - ORTools Cost
                     cost_diff = final_cost - ortools_cost
             except Exception:
                 cost_diff = "Error reading ORTools file"
         else:
             cost_diff = "ORTOOLS file not found"
 
-        # 2. Construct JSON
         output_data = {
             "algorithm": "QLearning",
             "data_path": data_path,
@@ -294,12 +278,10 @@ class QLearningSolver:
             "executing_time": exec_time
         }
 
-        # 3. Write JSON
         output_path = os.path.join(RESULT_DIR, "qlearning_100.json")
         with open(output_path, 'w') as f:
             json.dump(output_data, f, indent=4)
 
-        # 4. Console Summary
         print("\n" + "="*60)
         print(f"{'FINAL RESULTS':^60}")
         print("="*60)
@@ -309,13 +291,11 @@ class QLearningSolver:
         print(f"Results saved to    : {output_path}")
         print("="*60)
 
-
 if __name__ == "__main__":
     csv_path = "datasets/marine_debris_100.csv"
     
     try:
         data_obj = Data(csv_path)
-        # episodes=3000 allows decent convergence
         agent = QLearningSolver(data_obj, alpha=0.1, gamma=0.9) 
         agent.solve(csv_path, episodes=3000)
     except FileNotFoundError as e:
