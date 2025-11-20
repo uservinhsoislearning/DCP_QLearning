@@ -1,0 +1,172 @@
+{
+    "algorithm": "ORTOOLS",
+    "data_path": "datasets/marine_debris_20.csv",
+    "initial_global_optimal_solution": [
+        {
+            "vehicle_id": 1,
+            "type": "T2",
+            "path": [
+                0,
+                6,
+                4,
+                10,
+                0
+            ],
+            "load": 7.29,
+            "distance": 14.629999999999999
+        },
+        {
+            "vehicle_id": 4,
+            "type": "T5",
+            "path": [
+                0,
+                14,
+                11,
+                13,
+                18,
+                0
+            ],
+            "load": 10.8,
+            "distance": 13.190000000000001
+        },
+        {
+            "vehicle_id": 6,
+            "type": "T7",
+            "path": [
+                0,
+                7,
+                12,
+                2,
+                5,
+                0
+            ],
+            "load": 12.53,
+            "distance": 10.85
+        },
+        {
+            "vehicle_id": 8,
+            "type": "T1",
+            "path": [
+                0,
+                16,
+                9,
+                0
+            ],
+            "load": 6.59,
+            "distance": 8.5
+        },
+        {
+            "vehicle_id": 12,
+            "type": "T5",
+            "path": [
+                0,
+                17,
+                20,
+                19,
+                0
+            ],
+            "load": 10.18,
+            "distance": 14.18
+        },
+        {
+            "vehicle_id": 19,
+            "type": "T4",
+            "path": [
+                0,
+                3,
+                15,
+                8,
+                1,
+                0
+            ],
+            "load": 9.26,
+            "distance": 9.510000000000002
+        }
+    ],
+    "final_global_optimal_solution": [
+        {
+            "vehicle_id": 1,
+            "type": "T2",
+            "path": [
+                0,
+                6,
+                4,
+                10,
+                0
+            ],
+            "load": 7.29,
+            "distance": 14.629999999999999
+        },
+        {
+            "vehicle_id": 4,
+            "type": "T5",
+            "path": [
+                0,
+                14,
+                11,
+                13,
+                18,
+                0
+            ],
+            "load": 10.8,
+            "distance": 13.190000000000001
+        },
+        {
+            "vehicle_id": 6,
+            "type": "T7",
+            "path": [
+                0,
+                7,
+                12,
+                2,
+                5,
+                0
+            ],
+            "load": 12.53,
+            "distance": 10.85
+        },
+        {
+            "vehicle_id": 8,
+            "type": "T1",
+            "path": [
+                0,
+                16,
+                9,
+                0
+            ],
+            "load": 6.59,
+            "distance": 8.5
+        },
+        {
+            "vehicle_id": 12,
+            "type": "T5",
+            "path": [
+                0,
+                17,
+                20,
+                19,
+                0
+            ],
+            "load": 10.18,
+            "distance": 14.18
+        },
+        {
+            "vehicle_id": 19,
+            "type": "T4",
+            "path": [
+                0,
+                3,
+                15,
+                8,
+                1,
+                0
+            ],
+            "load": 9.26,
+            "distance": 9.510000000000002
+        }
+    ],
+    "initial_global_optimal_cost": 156000,
+    "final_global_optimal_cost": 156000,
+    "cost_diff": 0.0,
+    "executing_time": 30.008951902389526
+}
